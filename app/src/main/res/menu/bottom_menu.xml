@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/list_bottom"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_list"
+        android:title="목록"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/cal_bottom"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_cal"
+        android:title="달력"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/add_bottom"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_add"
+        android:title="추가"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/map_bottom"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_map"
+        android:title="위치"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/sys_bottom"
+        android:enabled="true"
+        android:icon="@drawable/icon_bottom_sys"
+        android:title="설정"
+        app:showAsAction="always"/>
+
+</menu>

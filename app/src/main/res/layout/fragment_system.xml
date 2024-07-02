@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_back"
+    tools:context=".TodoSystemFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/bar_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱 설정"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_icon"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/list_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/bar_back"
+        android:text="할 일 목록"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:textColor="@color/color_txt"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/cal_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/list_button"
+        android:text="달력"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/map_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/cal_button"
+        android:text="위치"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/cate_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/map_button"
+        android:text="카테고리"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sys_txt"
+        android:text="설정"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/cate_button"
+        android:textColor="#777777"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/thema_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/sys_txt"
+        android:text="앱 테마 설정"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/alerm_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/thema_button"
+        android:text="알림설정"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/reset_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/alerm_button"
+        android:text="초기화"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sys_txt2"
+        android:text="정보"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/reset_button"
+        android:textColor="#777777"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/info_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/sys_txt2"
+        android:text="앱 정보"
+        android:stateListAnimator="@null"
+        android:background="@drawable/radius"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_txt"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

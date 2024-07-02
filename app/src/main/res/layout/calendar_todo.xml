@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_back">
+
+    <!-- 상단 제목 및 뒤로기가 버튼 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/bar_back"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/icon_back"
+            android:background="@color/color_back"/>
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:text="상세보기"
+            android:textSize="18dp"
+            android:textColor="@color/color_icon"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Date -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/date_box"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/bar_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_txt"
+            android:text="Date"
+            android:textColor="@color/color_tit"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- 실제 날짜를 나타내는 텍스트 -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="2024-06-14"
+            android:textColor="@color/color_txt"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/date_txt"
+            app:layout_constraintBaseline_toBaselineOf="@id/date_txt"/>
+
+        <!-- 달력 아이콘을 갖는 날짜 선택 버튼 -->
+        <ImageButton
+            android:id="@+id/dateButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@null"
+            android:src="@drawable/icon_cal"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 이모티콘 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/emo_box"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/date_box">
+
+        <!-- 'Emotion' 텍스트 -->
+        <TextView
+            android:id="@+id/txtEmotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="15dp"
+            android:text="Emotion"
+            android:textColor="@color/color_tit"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 오늘의 이모티콘을 나타내는 텍스트 -->
+        <EditText
+            android:id="@+id/emojiEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:hint="오늘의 이모티콘은?"
+            android:textColor="@color/color_txt"
+            android:textColorHint="@color/color_txt"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtEmotion"
+            app:layout_constraintStart_toEndOf="@id/txtEmotion" />
+
+        <!-- 이모티콘 선택 버튼 -->
+        <!--    <Button-->
+        <!--        android:id="@+id/emoButton"-->
+        <!--        android:layout_width="55dp"-->
+        <!--        android:layout_height="35dp"-->
+        <!--        android:text="선택"-->
+        <!--        android:textSize="10sp"-->
+        <!--        android:backgroundTint="@color/color_back"-->
+        <!--        android:textColor="@color/color_txt"-->
+        <!--         />-->
+
+        <ImageButton
+            android:id="@+id/emoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/icon_add_emoticon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        app:layout_constraintTop_toBottomOf="@id/emo_box"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom">
+
+        <!-- 'Todo List' 텍스트 -->
+        <TextView
+            android:id="@+id/txtTodoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="To Do List"
+            android:textColor="@color/color_tit"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Todo 리스트를 표시하는 리사이클러뷰 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todoList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTodoList" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 좌측 가이드라인 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <!-- 우측 가이드라인 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <!-- 하단 가이드라인 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <!-- 현재 위치 -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMyLocation"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/icon_location"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
+        app:fabSize="normal"
+        app:backgroundTint="@color/color_point"/>
+
+    <!-- 검색바 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/map_Search"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/map_radius_1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="주소를 입력해 주세요 "
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:textColorHint="@color/color_txt"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:background="@drawable/map_radius_2"
+            android:id="@+id/Current_location"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:textColor="@color/white"
+            android:text="검색"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/map_Search"
+            app:layout_constraintTop_toTopOf="@+id/map_Search"
+            app:layout_constraintBottom_toBottomOf="@+id/map_Search"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="30dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

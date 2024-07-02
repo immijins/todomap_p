@@ -1,0 +1,9 @@
+<!-- res/drawable/white_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFFFF"/> <!-- 배경색: 흰색 -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF000000"/> <!-- 테두리색: 검정색 -->
+    <corners android:radius="10dp"/> <!-- 버튼 모서리 반경 -->
+</shape>
+<!-- 배경 색을 하얀 색으로 지정 하거나 지정하지 않을 경우 버튼의 경계를 구분하기 힘들어  테두리를 추가해 좀더 보기 쉽게 해주는 xml 코드 -->

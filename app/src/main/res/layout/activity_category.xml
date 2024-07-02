@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    tools:context=".CategoryActivity"
+    android:background="@color/color_back"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/bar_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카테고리"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_icon"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="기타"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/bar_back"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/etc"
+        app:layout_constraintBottom_toBottomOf="@id/category1"
+        app:layout_constraintEnd_toEndOf="@id/category1"
+        app:layout_constraintTop_toTopOf="@id/category1" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="중요"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category1"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/important"
+        app:layout_constraintBottom_toBottomOf="@id/category2"
+        app:layout_constraintEnd_toEndOf="@id/category2"
+        app:layout_constraintTop_toTopOf="@id/category2" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="쇼핑"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category2"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/shopping"
+        app:layout_constraintBottom_toBottomOf="@id/category3"
+        app:layout_constraintEnd_toEndOf="@id/category3"
+        app:layout_constraintTop_toTopOf="@id/category3" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="공부"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category3"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/study"
+        app:layout_constraintBottom_toBottomOf="@id/category4"
+        app:layout_constraintEnd_toEndOf="@id/category4"
+        app:layout_constraintTop_toTopOf="@id/category4" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="운동"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category4"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/workout"
+        app:layout_constraintBottom_toBottomOf="@id/category5"
+        app:layout_constraintEnd_toEndOf="@id/category5"
+        app:layout_constraintTop_toTopOf="@id/category5" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="예약"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category5"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/reserve"
+        app:layout_constraintBottom_toBottomOf="@id/category6"
+        app:layout_constraintEnd_toEndOf="@id/category6"
+        app:layout_constraintTop_toTopOf="@id/category6" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category7"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="업무"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category6"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/work"
+        app:layout_constraintBottom_toBottomOf="@id/category7"
+        app:layout_constraintEnd_toEndOf="@id/category7"
+        app:layout_constraintTop_toTopOf="@id/category7" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category8"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="여행"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category7"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/travel"
+        app:layout_constraintBottom_toBottomOf="@id/category8"
+        app:layout_constraintEnd_toEndOf="@id/category8"
+        app:layout_constraintTop_toTopOf="@id/category8" />
+
+    <TextView
+        android:background="@drawable/radius"
+        android:id="@+id/category9"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="일정"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/color_txt"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/category8"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:background="@drawable/category_background"
+        android:backgroundTint="@color/schedule"
+        app:layout_constraintBottom_toBottomOf="@id/category9"
+        app:layout_constraintEnd_toEndOf="@id/category9"
+        app:layout_constraintTop_toTopOf="@id/category9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

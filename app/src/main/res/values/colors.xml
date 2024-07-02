@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 컬러 추가 -->
+    <color name="color_point">#7C7AE5</color> <!-- 보라색 -->
+    <color name="color_back">#F9F9F9</color> <!-- 배경색 -->
+    <color name="color_txt">#444444</color> <!-- 텍스트 색 -->
+    <color name="color_tit">#BBBBBB</color> <!-- 타이틀 색 -->
+    <color name="box_back">#ffffff</color> <!-- 박스 배경 -->
+    <color name="add_back">#F9F9F9</color>
+    <color name="color_icon">#666666</color>
+    <color name="color_de_cal">#444444</color>
+    <color name="color_cal">#ffffff</color>
+
+    <color name="bar_back">#ffffff</color>
+
+    <!-- 카테고리 컬러 -->
+    <color name="etc">#B79368</color>
+    <color name="important">#ED6C6C</color>
+    <color name="shopping">#E3855E</color>
+    <color name="study">#EAD897</color>
+    <color name="workout">#85D571</color>
+    <color name="reserve">#7AD8E5</color>
+    <color name="work">#517AE2</color>
+    <color name="travel">#C0BFFF</color>
+    <color name="schedule">#7C7AE5</color>
+</resources>

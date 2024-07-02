@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/modify"
+        android:title="수정" />
+    <item
+        android:id="@+id/delete"
+        android:title="삭제" />
+</menu>
+<!-- menu 디렉토리 생성후 작성 category 버튼을 꾹 눌렀을때 나오는 팝업창 -->

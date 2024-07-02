@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_point">#7C7AE5</color>
+    <color name="color_txt">#ffffff</color>
+    <color name="color_back">#121212</color>
+    <color name="add_back">#3F3F3F</color>
+    <color name="box_back">#333333</color>
+    <color name="color_icon">#cccccc</color>
+    <color name="color_cal">#eeeeee</color>
+
+    <color name="bar_back">#1b1d25</color>
+</resources>

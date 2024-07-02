@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CreateTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <!-- DatePicker 모드 설정 -->
+        <item name="android:datePickerMode">calendar</item>
+
+        <!-- Accent color -->
+        <item name="colorAccent">@color/color_point</item>
+
+        <!-- 선택한 날짜 배경 색 및 Highlight item color -->
+        <item name="colorControlActivated">@color/color_point</item>
+        <item name="colorControlHighlight">#FF6D63</item>
+
+        <!-- 텍스트 색상 설정 -->
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+        <item name="android:textColorPrimary">@color/color_de_cal</item>
+
+        <!-- 텍스트 크기 설정 -->
+        <item name="android:textSize">15sp</item>
+
+        <item name="android:timePickerStyle">@style/MyTimePickerTheme</item>
+    </style>
+
+    <style name="MyTimePickerTheme" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+    <!-- 스플래시 테마 -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/color_point</item>
+    </style>
+
+    <!-- 달력 글자 색상 커스텀 -->
+
+
+    <!-- 기본모드 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:windowBackground">@color/color_back</item>
+    </style>
+
+    <!-- 다크모드 -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:windowBackground">@color/color_back</item>
+    </style>
+</resources>
